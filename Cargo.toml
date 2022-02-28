@@ -1,6 +1,9 @@
 [package]
 name = "pi_ext_heap"
 version = "0.1.0"
-authors = ["zmythleo <zmythleo@gmail.com>"]
-edition = "2018"
-
+authors = ["suncy <530739162@qq.com>"]
+edition = "2021"
+description = "Extending the heap supports deleting and modifying the elements at the specified location. When the elements in the heap move, the callback function will be called"
+repository = "https://github.com/GaiaWorld/pi_ext_heap.git"
+license = "MIT OR Apache-2.0"
+keywords = ["pi", "any", "downcast", "pi_ext_heap"]
