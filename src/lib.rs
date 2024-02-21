@@ -152,7 +152,7 @@
 extern crate alloc;
 
 use core::fmt;
-use core::iter::{FromIterator, FusedIterator, InPlaceIterable, SourceIter, TrustedLen};
+use core::iter::{FusedIterator, SourceIter, TrustedLen};
 use core::mem::{self, swap, ManuallyDrop};
 use core::ptr;
 use std::cmp::Ordering;
@@ -1267,9 +1267,6 @@ unsafe impl<T> SourceIter for IntoIter<T> {
         self
     }
 }
-
-unsafe impl<I> InPlaceIterable for IntoIter<I> {}
-
 
 #[derive(Clone, Debug)]
 pub struct IntoIterSorted<T> {
